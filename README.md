@@ -1,23 +1,19 @@
-# EX-7-Implement DES Encryption and Decryption
+# EX-8-Implement AES Encryption and Decryption
+
 ## Aim:
-  Implementation of Pseudorandom Number Generation Using Standard library.
+  Implementation of Pseudorandom Number Generation Using Standard Library.
 
 ## ALGORITHM: 
+1.	Get the input and convert it as a block cipher.
+2.	The plain text is initially permuted and split into 2 equal halves.
+3.	It undergoes 16 rounds of encryption.
+4.	These 2 halves are finally rejoined to give cipher text.
+5.	The same happens in the decryption process but in an inverse manner.
 
-  1.Get the input and convert it as block cipher.
-  
-  2.The plain text is initially permuted and split into 2 equal halves.
-  
-  3.It undergoes 16 rounds of encryption.
-  
-  4.These 2 halves are finally rejoined to give cipher text.
-  
-  5.The same happens in decryption process but in an inverse manner.
-  
-## NAME : MUKESH P
-## REGISTER NO. : 212222240068
 ## PROGRAM: 
 ```
+// NAME: MUKESH P
+// REG_NO: 212222240068
 #include <stdio.h>
 #include <string.h>
 
@@ -81,11 +77,12 @@ int main() {
     
     return 0;
 }
+
 ```
-
-
 ## OUTPUT:
-![OP7](https://github.com/user-attachments/assets/3f96991e-8fa3-4d4d-aa8b-7efaff520ecb)
+![crop8](https://github.com/user-attachments/assets/ca3cad81-cdcb-484e-bf19-8108a2c74bed)
+
+
 
 ## RESULT: 
 Hence, for the given input text and key the DES algorithm is successfully simulated.
